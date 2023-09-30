@@ -5,28 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Code as Policies: Language Model Programs for Embodied Control</title>
+    <title>Generative Expressive Robot Behaviors using Large Language Models</title>
 
-    <meta name="description" content="Code as Policies: Language Model Programs for Embodied Control">
+    <meta name="description" content="Generative Expressive Robot Behaviors using Large Language Models">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <base href="/"> -->
-
-        <!--FACEBOOK-->
-    <meta property="og:image" content="https://code-as-policies.github.io/img/share_image.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="682">
-    <meta property="og:image:height" content="682">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://code-as-policies.github.io/"/>
-    <meta property="og:title" content="Code as Policies" />
-    <meta property="og:description" content="Project page for Code as Policies: Language Model Programs for Embodied Control." />
-
-        <!--TWITTER-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Code as Policies" />
-    <meta name="twitter:description" content="Project page for Code as Policies: Language Model Programs for Embodied Control." />
-    <meta name="twitter:image" content="https://code-as-policies.github.io/img/share_image.png" />
 
 <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
   <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
@@ -73,94 +57,6 @@
                     ICRA 2023
                 </small>-->
             </h2>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline">
-                <br>
-                <li><a href="//jacky.io">Jacky Liang</a></li>
-                <li><a href="//wenlong.page/">Wenlong Huang</a></li>
-                <li><a href="//fxia22.github.io/">Fei Xia</a></li>
-                <li>Peng Xu</li>
-                <li><a href="//karolhausman.github.io/">Karol Hausman</a></li>
-                <li><a href="//brianichter.com/">Brian Ichter</a></li>
-                <li><a href="//www.peteflorence.com/">Pete Florence</a></li>
-                <li><a href="//andyzeng.github.io/">Andy Zeng</a></li>
-                <br>
-                <br>
-                    <a href="http://g.co/robotics">
-                        <image src="img/robotics-at-google.png" height="40px"> 
-                        Robotics at Google                        
-                    </a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row justify-content-md-center">
-            <div class="col-md-2 text-center">
-                <a href="https://arxiv.org/abs/2209.07753">
-                <image src="img/paper_small.png" height="60px">
-                <h4><strong>Paper</strong></h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="https://ai.googleblog.com/2022/11/robots-that-write-their-own-code.html">
-                <image src="img/google-ai-blog-small.png" height="60px">
-                <h4><strong>Blog</strong></h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="https://github.com/google-research/google-research/tree/master/code_as_policies">
-                <image src="img/github.png" height="60px">
-                <h4><strong>Code</strong></h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="https://colab.research.google.com/drive/124TE4TsGYyrvduzeDclufyvwcc2qbbrE">
-                <image src="img/colab.png" height="60px">
-                <h4><strong>Colab</strong></h4>
-                </a>
-            </div>
-	    <div class="col-md-2 text-center">
-                <a href="https://huggingface.co/spaces/jackyliang42/code-as-policies">
-                <image src="img/demo.png" height="60px">
-                <h4><strong>Demo</strong></h4>
-                </a>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/tasks.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-8">
-                <h3 class="mt-4 mb-2">
-                    Abstract
-                </h3>
-                <p class="text-justify">
-Large language models (LLMs) trained on code-completion have been shown to be capable of synthesizing simple Python programs from docstrings [1]. 
-We find that these codewriting LLMs can be re-purposed to write robot policy code, given natural language commands. 
-Specifically, policy code can express functions or feedback loops that process perception outputs (e.g.,from object detectors [2], [3]) and parameterize control primitive APIs.
-When provided as input several example language commands (formatted as comments) followed by corresponding policy code (via few-shot prompting), LLMs can take in new commands and autonomously re-compose API calls to generate new policy code respectively. 
-By chaining classic logic structures and referencing third-party libraries (e.g., NumPy, Shapely) to perform arithmetic, LLMs used in this way can write robot policies that (i) exhibit spatial-geometric reasoning, (ii) generalize to new instructions, and (iii) prescribe precise values (e.g., velocities) to ambiguous descriptions (“faster”) depending on context (i.e., behavioral commonsense). 
-This paper presents code as policies: a robot-centric formalization of language model generated programs (LMPs) that can represent reactive policies (e.g., impedance controllers), as well as waypoint-based policies (vision-based pick and place, trajectory-based control), demonstrated across multiple real robot platforms. Central to our approach is prompting hierarchical code-gen (recursively defining undefined functions), which can write more complex code and also improves state-of-the-art to solve 39.8% of problems on the HumanEval [1] benchmark. 
-Code and videos are available at https://code-as-policies.github.io
-                </p>
-                <p style="text-align:center;">
-                    <image src="img/share_image.png" width="100%">
-                </p>
-                <div class="col-md-12">
-                    <video id="v0" width="100%" preload="metadata" playsinline controls>
-                        <source src="videos/3_min_explainer.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
         </div>
 
         <div class="row justify-content-md-center">

@@ -12,188 +12,337 @@
 
     <!-- <base href="/"> -->
 
-<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
 
-    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <link rel="stylesheet" href="css/app.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    
+
     <script src="js/app.js"></script>
-	
+
     <style>
         .nav-pills {
-          position: relative;
-          display: inline;
+            position: relative;
+            display: inline;
         }
+
         .imtip {
-          position: absolute;
-          top: 0;
-          left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
+
+    <link rel="stylesheet"
+        href="./css/bulma.min.css">
+    <link rel="stylesheet"
+        href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet"
+        href="./css/bulma-slider.min.css">
+    <link rel="stylesheet"
+        href="./css/index.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/fontawesome.all.min.js"></script>
+    <script
+        src="./js/bulma-carousel.min.js"></script>
+    <script
+        src="./js/bulma-slider.min.js"></script>
+    <script
+        src="./js/index.js"></script>
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JBS73F70V"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-5JBS73F70V');
+    gtag('config', 'G-5JBS73F70V');
 </script>
+
 <body>
     <div class="container" id="main">
         <div class="row mt-4">
             <h2 class="col-md-12 text-center">
-                <b><font size="+6">Generative Expressive Robot Behaviors</font></b>: </br> using Large Language Models </br> 
-                <!--<small>
-                    ICRA 2023
-                </small>-->
+                <b>
+                    <font size="+6">Generative Expressive Robot Behaviors <br> Using Large Language Models </br></font>
+                </b>
+                <small>
+                    HRI 2024
+                </small>
             </h2>
         </div>
 
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-8">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <br>
+                    <li><a href="https://karthikmahadevan.ca">Karthik Mahadevan</a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathanchien">Jonathan Chien</a></li>
+                    <li><a href="https://www.linkedin.com/in/noah-brown-40157b124">Noah Brown</a></li>
+                    <li><a href="https://www.linkedin.com/in/zhuo-xu-joe/">Zhuo Xu</a></li>
+                    <br>
+                    <li><a href="https://www.linkedin.com/in/carolinaparada/">Carolina Parada</a></li>
+                    <li><a href="https://fxia22.github.io/">Fei Xia</a></li>
+                    <li><a href="//andyzeng.github.io/">Andy Zeng</a></li>
+                    <li><a href="https://www.linkedin.com/in/leilatakayama/">Leila Takayama</a></li>
+                    <li><a href="https://dorsa.fyi/">Dorsa Sadigh</a></li>
+                    <br>
+                    <br>
+                    <a href="http://g.co/robotics">
+                        <img src="img/deepmind.png" style="width: 10%;">
+                        Google Deepmind
+                    </a>
+                </ul>
             </div>
         </div>
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    People employ expressive behaviors to effectively communicate and coordinate their actions with
+                    others, such as nodding to acknowledge a person glancing at them or saying "excuse me" to pass
+                    people in a busy corridor. We would like robots to also demonstrate expressive behaviors in
+                    human-robot interaction. Prior work proposes rule-based methods that struggle to scale to new
+                    communication modalities or social situations, while data-driven methods require specialized
+                    datasets for each social situation the robot is used in. We propose to leverage the rich social
+                    context available from large language models (LLMs) and their ability to generate motion based on
+                    instructions or user preferences, to generate expressive robot motion that is adaptable and
+                    composable, building upon each other. Our approach utilizes few-shot chain-of-thought prompting to
+                    translate human language instructions into parametrized control code using the robot's available and
+                    learned skills. Through user studies and simulation experiments, we demonstrate that our approach
+                    produces behaviors that users found to be competent and easy to understand. Supplementary material
+                    can be found at https://generative-expressive-motion.github.io/.
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/cover.png" width="100%" height="100%">
+                </p>
+            </div>
+        </div>
+
+        <section class="hero is-light is-small" style="margin-top: 50px;">
+            <div class="hero-body">
+                <div class="container">
+                    <!-- Start Carousel -->
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/1.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/2.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/3.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/4.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/5.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/6.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/7.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/8.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/9.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mov">
+                                <source src="videos/Study1/Study1/Round 2/C3/10.mov" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
                 <h3>User Studies</h3>
-                
+
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Study 1: Benchmarking Generative Expressive Motion</h5>
                     <div class="card-body">
                         <!--p>Choose a command:</p-->
                         <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
                                 <source src="videos/Study1/Nod.mp4" type="video/mp4">
                             </video>
                         </div>
-                        
+
                         <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Shake.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Wake.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Excuse.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Recoverable.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Unrecoverable.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Acknowledge_Stop.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Follow.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Approach.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study1/Attention.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Study 2: Mimicking the Oracle Animator</h5>
                     <div class="card-body">
                         <!--p>Choose a command:</p-->
                         <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
                                 <source src="videos/Study2/Nod.mp4" type="video/mp4">
                             </video>
                         </div>
-                        
+
                         <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Shake.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Wake.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Excuse.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Recoverable.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Unrecoverable.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Acknowledge_Walk.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Acknowledge_Stop.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Teach.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Study2/Follow.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -209,13 +358,15 @@
                     <h5 class="card-header">Experiments with Quadruped</h5>
                     <div class="card-body">
                         <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
                                 <source src="videos/Recoverable_vs_Unrecoverable.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Approach.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -224,13 +375,15 @@
                     <h5 class="card-header">Composing Complex Expressive Behaviors</h5>
                     <div class="card-body">
                         <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
                                 <source src="videos/Confusion_Quad.mp4" type="video/mp4">
                             </video>
                         </div>
 
                         <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls autoplay loop muted>
+                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
+                                autoplay loop muted>
                                 <source src="videos/Confusion.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -242,7 +395,10 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>hljs.highlightAll();</script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script>hljs.highlightAll();</script>
 </body>
+
 </html>

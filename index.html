@@ -25,7 +25,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
 
-    <script src="js/app.js"></script>
+    <!--script src="js/app.js"></script-->
 
     <style>
         .nav-pills {
@@ -40,23 +40,16 @@
         }
     </style>
 
-    <link rel="stylesheet"
-        href="./css/bulma.min.css">
-    <link rel="stylesheet"
-        href="./css/bulma-carousel.min.css">
-    <link rel="stylesheet"
-        href="./css/bulma-slider.min.css">
-    <link rel="stylesheet"
-        href="./css/index.css">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/fontawesome.all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./js/fontawesome.all.min.js"></script>
-    <script
-        src="./js/bulma-carousel.min.js"></script>
-    <script
-        src="./js/bulma-slider.min.js"></script>
-    <script
-        src="./js/index.js"></script>
+    <script src="./js/bulma-carousel.min.js"></script>
+    <script src="./js/bulma-slider.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -76,7 +69,7 @@
                 <b>
                     <font size="+6">Generative Expressive Robot Behaviors <br> Using Large Language Models </br></font>
                 </b>
-                <small>
+                <small style="font-size: 20px;">
                     HRI 2024
                 </small>
             </h2>
@@ -105,295 +98,742 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-8">
-                <h3 class="mt-4 mb-2">
-                    Abstract
-                </h3>
-                <p class="text-justify">
-                    People employ expressive behaviors to effectively communicate and coordinate their actions with
-                    others, such as nodding to acknowledge a person glancing at them or saying "excuse me" to pass
-                    people in a busy corridor. We would like robots to also demonstrate expressive behaviors in
-                    human-robot interaction. Prior work proposes rule-based methods that struggle to scale to new
-                    communication modalities or social situations, while data-driven methods require specialized
-                    datasets for each social situation the robot is used in. We propose to leverage the rich social
-                    context available from large language models (LLMs) and their ability to generate motion based on
-                    instructions or user preferences, to generate expressive robot motion that is adaptable and
-                    composable, building upon each other. Our approach utilizes few-shot chain-of-thought prompting to
-                    translate human language instructions into parametrized control code using the robot's available and
-                    learned skills. Through user studies and simulation experiments, we demonstrate that our approach
-                    produces behaviors that users found to be competent and easy to understand. Supplementary material
-                    can be found at https://generative-expressive-motion.github.io/.
-                </p>
-                <p style="text-align:center;">
-                    <image src="img/cover.png" width="100%" height="100%">
-                </p>
+            <div class="col-md-2 text-center">
+                <a href="https://drive.google.com/file/d/1HGpMXfy53VWJufrLGDrBceyRBfJgOW5Z/view?usp=sharing">
+                    <image src="img/paper_small.png" height="60px">
+                        <h4><strong>Paper</strong></h4>
+                </a>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <a href="https://drive.google.com/file/d/1Ny07f0dpc0CJyyag3KTwfpHdv_-CSz_p/view?usp=sharing">
+                    <image src="img/paper_appendices.png" height="60px">
+                        <h4><strong>Appendices</strong></h4>
+                </a>
             </div>
         </div>
 
-        <section class="hero is-light is-small" style="margin-top: 50px;">
-            <div class="hero-body">
-                <div class="container">
-                    <!-- Start Carousel -->
-                    <div id="results-carousel" class="carousel results-carousel">
-                        <div class="item-1">
-                            <!-- Slide Content -->
-                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/1.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-2">
-                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/2.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-3">
-                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/3.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-4">
-                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/4.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-5">
-                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/5.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-6">
-                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/6.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-5">
-                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/7.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-5">
-                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/8.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-9">
-                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/9.mov" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="item-10">
-                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mov">
-                                <source src="videos/Study1/Study1/Round 2/C3/10.mov" type="video/mp4">
-                            </video>
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p class="text-justify">
+                                People employ expressive behaviors to effectively communicate and coordinate their
+                                actions with
+                                others, such as nodding to acknowledge a person glancing at them or saying "excuse me"
+                                to pass
+                                people in a busy corridor. We would like robots to also demonstrate expressive behaviors
+                                in
+                                human-robot interaction. Prior work proposes rule-based methods that struggle to scale
+                                to new
+                                communication modalities or social situations, while data-driven methods require
+                                specialized
+                                datasets for each social situation the robot is used in. We propose to leverage the rich
+                                social
+                                context available from large language models (LLMs) and their ability to generate motion
+                                based on
+                                instructions or user preferences, to generate expressive robot motion that is adaptable
+                                and
+                                composable, building upon each other. Our approach utilizes few-shot chain-of-thought
+                                prompting to
+                                translate human language instructions into parametrized control code using the robot's
+                                available and
+                                learned skills. Through user studies and simulation experiments, we demonstrate that our
+                                approach
+                                produces behaviors that users found to be competent and easy to understand.
+                                Supplementary material
+                                can be found at https://generative-expressive-motion.github.io/.
+                            </p>
+                            <p style="text-align:center; margin-top: 50px;">
+                                <img src="img/cover.png" width="100%" height="100%">
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="row justify-content-md-center mt-4">
-            <div class="col-md-10 col-lg-8">
-                <h3>User Studies</h3>
+        <!--    Approach    -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Study 1: Benchmarking Generative Expressive Motion</h5>
-                    <div class="card-body">
-                        <!--p>Choose a command:</p-->
-                        <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
-                                loop muted>
-                                <source src="videos/Study1/Nod.mp4" type="video/mp4">
-                            </video>
-                        </div>
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Approach</h2>
+                        <div class="content has-text-justified">
+                            <p class="text-justify">
+                                We aim to tackle the problem of expressive behavior generation that is both adaptive to
+                                user feedback and composable so that more complex behaviors can build on simpler
+                                behaviors. Formally, we define being expressive as the distance between some
+                                expert expressive trajectory that could be generated by an animator (or demonstrated) \(
+                                \tau_{\text{expert}} \) and a robot trajectory \( \tau \). \( \text{dist}(\tau,
+                                \tau_{\text{expert}}) \) can be any desirable distance metric between the two
+                                trajectories, e.g., dynamic time warping (DTW). GenEM aims to minimize this distance \(
+                                d^* = \min \text{dist}(\tau,\tau_{\text{expert}}) \).
+                            </p>
+                            <p class="text-justify">
+                                Our approach uses several LLMs in a modular fashion so that
+                                each LLM agent plays a distinct role. GenEM takes user language instructions \( l_{in}
+                                \in L \) as input and outputs a
+                                robot policy \( \pi_\theta \), which is in the form of a parameterized code.
 
-                        <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Shake.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                                Human iterative feedback \( f_i \in L \) can be used to update the policy \( \pi_\theta
+                                \).
+                                The policy parameters get updated one step at a time given the feedback \( f_i \), where
+                                \( i
+                                \in \{1,\dots, K\} \).
+                                The policy can be instantiated from some initial state \( s_0 \in S \) to produce
+                                trajectories \( \tau = \{s_0, a_0, \dots, a_{N-1},s_N\} \) or instantiations of
+                                expressive
+                                robot behavior.
+                            </p>
 
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Wake.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Excuse.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Recoverable.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Unrecoverable.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Acknowledge_Stop.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Follow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Approach.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study1/Attention.mp4" type="video/mp4">
-                            </video>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Study 2: Mimicking the Oracle Animator</h5>
-                    <div class="card-body">
-                        <!--p>Choose a command:</p-->
-                        <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
-                                loop muted>
-                                <source src="videos/Study2/Nod.mp4" type="video/mp4">
-                            </video>
-                        </div>
+        <p style="text-align:center;">
+            <image src="img/approach.png" width="100%" height="100%">
+        </p>
 
-                        <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Shake.mp4" type="video/mp4">
-                            </video>
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Studies</h2>
+                        <div class="content has-text-justified">
+                            <p class="text-justify">
+                                We conducted two user studies to assess whether our approach, GenEM, can be used to
+                                generate expressive behaviors that are perceivable by people. We generated two versions
+                                of behaviors: GenEM, and GenEM with iterative Feedback (or GenEM++). In
+                                both studies, all comparisons were made against behaviors designed by a professional
+                                animator and implemented by a software developer, which we term the oracle animator. In
+                                the first study, our goal was to assess whether behaviors that are generated
+                                using GenEM and GenEM++ would be perceived similarly to the behaviors created using the
+                                oracle animator. In the second study, we attempted to generate behaviors using GenEM and
+                                GenEM++ that were similar to the behaviors created using the oracle animator. Both studies aim
+                                to demonstrate that our approach is adaptable to human feedback.
+                            </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Wake.mp4" type="video/mp4">
-                            </video>
-                        </div>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h3 class="title is-3">Study 1: Benchmarking GenEM</h3>
+                    <div class="content has-text-justified">
+                        <p class="text-justify">
+                            To determine whether our approach produces expressive behaviors
+                            that people can perceive, we conducted a within-subjects user study
+                            with thirty participants.
 
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Excuse.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Recoverable.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Unrecoverable.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Acknowledge_Walk.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Acknowledge_Stop.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Teach.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="wake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Study2/Follow.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                            We generated ten expressive behaviors ranging in complexity: Nod, shake head (Shake), wake
+                            up (Wake), excuse me (Excuse), recoverable mistake (Recoverable), unrecoverable mistake
+                            (Unrecoverable), acknowledge person walking by (Acknowledge), follow person (Follow),
+                            approach person (Approach) and pay attention to person (Attention). The input included a
+                            one-line instruction (e.g., Respond to a person saying, “Come here. You cannot speak.”).
+                        </p>
+                        <p style="text-align:center; margin-top: 50px;" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-md-center mt-4">
-            <div class="col-md-10 col-lg-8">
-                <h3>Miscellaneous</h3>
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Experiments with Quadruped</h5>
-                    <div class="card-body">
-                        <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
-                                loop muted>
-                                <source src="videos/Recoverable_vs_Unrecoverable.mp4" type="video/mp4">
+        <h3>Oracle Animator</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/1.mp4" type="video/mp4">
                             </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
                         </div>
-
-                        <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Approach.mp4" type="video/mp4">
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/2.mp4" type="video/mp4">
                             </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C1/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <h5 class="card-header">Composing Complex Expressive Behaviors</h5>
-                    <div class="card-body">
-                        <div class="col-md-12 mb-2">
-                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
-                                loop muted>
-                                <source src="videos/Confusion_Quad.mp4" type="video/mp4">
+        <!-- Start Carousel -->
+        <h3>GenEM</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/1.mp4" type="video/mp4">
                             </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
                         </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C2/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="col-md-12 mb-2">
-                            <video id="shake_all_conditions" width="100%" preload="metadata" playsinline controls
-                                autoplay loop muted>
-                                <source src="videos/Confusion.mp4" type="video/mp4">
+        <h3>GenEM++</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/1.mp4" type="video/mp4">
                             </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
                         </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study1/Study1/C3/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h3 class="title is-3" style="margin-top: 50px;">Study 2: Mimicking the Oracle Animator</h3>
+                    <div class="content has-text-justified">
+                        <p class="text-justify" style="margin-bottom: 50px;">
+                            We generated ten expressive behaviors ranging in complexity, with eight
+                            overlapping behaviors from the first study: nod (Nod), shake
+                            head (Shake), wake up (Wake), excuse me (Excuse), recoverable mistake
+                            (Recoverable), unrecoverable mistake (Unrecoverable), acknowledge person
+                            walking by (Acknowledge Walking), acknowledge person stopping by (Acknowledge
+                            Stop), follow person (Follow), and teaching session (Teach). Behaviors that
+                            were different from the first study were chosen to add further complexity. Unlike in the
+                            first study, the prompts were more varied and sometimes
+                            included additional descriptions such as for the more complex behaviors (see
+                            Appendices for full prompts for each behavior).
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <h3>Oracle Animator</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
+                        </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2C1/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C1/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Carousel -->
+        <h3>GenEM</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
+                        </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C2/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h3>GenEM++</h3>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <!-- Carousel items go here -->
+                        <!-- Start Carousel -->
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                            <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Nod</p>
+                            </div>
+                        </div>
+                        <div class="item-2">
+                            <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Shake</p>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-4">
+                            <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Excuse</p>
+                            </div>
+                        </div>
+                        <div class="item-5">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Recoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-6">
+                            <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Unrecoverable</p>
+                            </div>
+                        </div>
+                        <div class="item-7">
+                            <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Acknowledge</p>
+                            </div>
+                        </div>
+                        <div class="item-8">
+                            <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Follow</p>
+                            </div>
+                        </div>
+                        <div class="item-9">
+                            <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Approach</p>
+                            </div>
+                        </div>
+                        <div class="item-10">
+                            <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                                <source src="videos/Study2/Study2/C3/10.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <p>Attention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- End Carousel -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

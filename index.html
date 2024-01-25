@@ -219,7 +219,8 @@
                                 the first study, our goal was to assess whether behaviors that are generated
                                 using GenEM and GenEM++ would be perceived similarly to the behaviors created using the
                                 oracle animator. In the second study, we attempted to generate behaviors using GenEM and
-                                GenEM++ that were similar to the behaviors created using the oracle animator. Both studies aim
+                                GenEM++ that were similar to the behaviors created using the oracle animator. Both
+                                studies aim
                                 to demonstrate that our approach is adaptable to human feedback.
                             </p>
                         </div>
@@ -533,9 +534,35 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
+                    <h3 class="title is-3" style="margin-top: 50px;">Results</h3>
+                    <div class="content has-text-justified">
+                        <p class="text-justify">
+                            We found that GenEM++ behaviors were well received and were not perceived as significantly
+                            worse than the baseline oracle animator behaviors (and in some cases were perceived as
+                            better).
+                        </p>
+                        <p style="text-align:center; margin-top: 50px;" />
+
+                        <p style="text-align:center; margin-top: 50px;">
+                            <img src="img/study1_results.png" width="100%" height="100%">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    Study 2     -->
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
                     <h3 class="title is-3" style="margin-top: 50px;">Study 2: Mimicking the Oracle Animator</h3>
                     <div class="content has-text-justified">
                         <p class="text-justify" style="margin-bottom: 50px;">
+                            We conducted an additional user study with twenty four participants to assess whether using
+                            GenEM to generate behaviors that resmebled the oracle animator would be perceived
+                            differently.
+
                             We generated ten expressive behaviors ranging in complexity, with eight
                             overlapping behaviors from the first study: nod (Nod), shake
                             head (Shake), wake up (Wake), excuse me (Excuse), recoverable mistake
@@ -546,6 +573,10 @@
                             first study, the prompts were more varied and sometimes
                             included additional descriptions such as for the more complex behaviors (see
                             Appendices for full prompts for each behavior).
+
+                            To create each GenEM++ behavior, an experimenter refined the GenEM behavior through
+                            iterative feedback until it appeared similar to the equivalent oracle animator behavior or
+                            after exceeding the maximum number of feedback rounds
                         </p>
                     </div>
                 </div>
@@ -831,6 +862,31 @@
                 </div>
             </div>
         </section>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h3 class="title is-3" style="margin-top: 50px;">Results</h3>
+                    <div class="content has-text-justified">
+                        <p class="text-justify">
+                            Similarly, we found that GenEM++ behaviors were well received and that the oracle animator
+                            behaviors were not perceived as significantly better.
+                        </p>
+                        <p style="text-align:center; margin-top: 50px;" />
+
+                        <p style="text-align:center; margin-top: 50px;">
+                            <img src="img/study2_results.png" width="100%" height="100%">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    Ablations    -->
+        <video width="1280" height="240" controls>
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
 
         <!-- End Carousel -->

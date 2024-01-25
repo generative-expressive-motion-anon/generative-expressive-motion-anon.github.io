@@ -1,0 +1,290 @@
+<div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h3 class="title is-3">Study 2</h3>
+            <div class="content has-text-justified">
+                </p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<h3>Oracle Animator</h3>
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+                <!-- Carousel items go here -->
+                    <!-- Start Carousel -->
+                <div class="item-1">
+                    <!-- Slide Content -->
+                    <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Nod</p>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Shake</p>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Excuse</p>
+                    </div>
+                </div>
+                <div class="item-5">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Recoverable</p>
+                    </div>
+                </div>
+                <div class="item-6">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Unrecoverable</p>
+                    </div>
+                </div>
+                <div class="item-7">
+                    <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Acknowledge</p>
+                    </div>
+                </div>
+                <div class="item-8">
+                    <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Follow</p>
+                    </div>
+                </div>
+                <div class="item-9">
+                    <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-10">
+                    <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Attention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start Carousel -->
+<h3>GenEM</h3>
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+                <!-- Carousel items go here -->
+                    <!-- Start Carousel -->
+                <div class="item-1">
+                    <!-- Slide Content -->
+                    <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Nod</p>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Shake</p>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Excuse</p>
+                    </div>
+                </div>
+                <div class="item-5">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Recoverable</p>
+                    </div>
+                </div>
+                <div class="item-6">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Unrecoverable</p>
+                    </div>
+                </div>
+                <div class="item-7">
+                    <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Acknowledge</p>
+                    </div>
+                </div>
+                <div class="item-8">
+                    <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Follow</p>
+                    </div>
+                </div>
+                <div class="item-9">
+                    <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-10">
+                    <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Attention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h3>GenEM++</h3>
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+                <!-- Carousel items go here -->
+                    <!-- Start Carousel -->
+                <div class="item-1">
+                    <!-- Slide Content -->
+                    <video poster="" id="1" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Nod</p>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <video poster="" id="2" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Shake</p>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <video poster="" id="3" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <video poster="" id="4" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Excuse</p>
+                    </div>
+                </div>
+                <div class="item-5">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Recoverable</p>
+                    </div>
+                </div>
+                <div class="item-6">
+                    <video poster="" id="5" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Unrecoverable</p>
+                    </div>
+                </div>
+                <div class="item-7">
+                    <video poster="" id="7" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Acknowledge</p>
+                    </div>
+                </div>
+                <div class="item-8">
+                    <video poster="" id="8" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C1/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Follow</p>
+                    </div>
+                </div>
+                <div class="item-9">
+                    <video poster="" id="9" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C3/9.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Approach</p>
+                    </div>
+                </div>
+                <div class="item-10">
+                    <video poster="" id="10" autoplay muted loop height="100%" type="video/mp4">
+                        <source src="videos/Study2/Study2/C3/10.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Attention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

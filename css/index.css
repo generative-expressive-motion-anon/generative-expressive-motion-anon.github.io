@@ -2,7 +2,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
   }
   
-  
   .footer .icon-link {
       font-size: 25px;
       color: #000;
@@ -191,3 +190,21 @@ body {
   h3 {
     font-size: 30px;
   }
+
+  h4 {
+    font-size: 15px;
+  }
+  
+.item-n {
+    position: relative;
+}
+
+.item-n .video-overlay {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Text color */
+    padding: 5px; /* Padding around text */
+}

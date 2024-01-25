@@ -148,14 +148,15 @@
                                 Supplementary material
                                 can be found at https://generative-expressive-motion.github.io/.
                             </p>
-                            <p style="text-align:center; margin-top: 50px;">
-                                <img src="img/cover.png" width="100%" height="100%">
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <p style="text-align:center;">
+            <img src="img/cover.png" width="60%" height="60%">
+        </p>
 
         <!--    Approach    -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -560,7 +561,7 @@
                     <div class="content has-text-justified">
                         <p class="text-justify" style="margin-bottom: 50px;">
                             We conducted an additional user study with twenty four participants to assess whether using
-                            GenEM to generate behaviors that resmebled the oracle animator would be perceived
+                            GenEM to generate behaviors that resembled the oracle animator would be perceived
                             differently.
 
                             We generated ten expressive behaviors ranging in complexity, with eight
@@ -883,11 +884,60 @@
         </div>
 
         <!--    Ablations    -->
-        <video width="1280" height="240" controls>
-            <source src="path/to/your/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
 
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Cross-Embodiment Behavior Generation</h2>
+                        <div class="content has-text-justified">
+                            <p class="text-justify">
+                                We sampled the same prompts in the first user study five times per behavior using API
+                                for
+                                a simulated Spot robot. Overall, the success rates hint at the generality of our
+                                approach to
+                                differing robot embodiments.
+                            </p>
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
+                                <source src="videos/Quadruped/Recoverable_vs_Unrecoverable.mp4" type="video/mp4">
+                            </video>
+
+                            <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                                loop muted>
+                                <source src="videos/Quadruped/Approach.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Composing Complex Expressive Behaviors</h2>
+                    <div class="content has-text-justified">
+                        <p class="text-justify">
+                            We attempted to generate more complex behaviors using a set of learned expressive behaviors
+                            from previous interactions - these skills were appended to the prompts describing the robot’s
+                            capabilities (step 2 of our approach) as well as the robot’s API (represented as functions with docstrings).
+                            We found that the robot was able to compose complex behaviors from a set of learned expressive behaviors but did not
+                            always utilize the expected behaviors during composition.
+                        </p>
+                        <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                            loop muted>
+                            <source src="videos/Composability/Confusion_Quad.mp4" type="video/mp4">
+                        </video>
+
+                        <video id="nod_all_conditions" width="100%" preload="metadata" playsinline controls autoplay
+                            loop muted>
+                            <source src="videos/Composability/Confusion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- End Carousel -->
 

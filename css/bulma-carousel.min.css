@@ -219,3 +219,7 @@
     margin: 0 3rem;
     z-index: 10
 }
+
+.carousel-indicators {
+    display: none;
+  }
